@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+backups/
+.pytest_cache/
+*.log
+local-credentials.txt
+docs/evidence/raw-video/

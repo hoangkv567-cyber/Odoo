@@ -1,0 +1,14 @@
+<odoo noupdate="1">
+    <record id="booking_sequence" model="ir.sequence"><field name="name">XYZ booking</field><field name="code">xyz.booking</field><field name="prefix">BK/</field><field name="padding">5</field></record>
+    <record id="project_service" model="project.project"><field name="name">XYZ · Field service</field><field name="allow_timesheets">True</field><field name="privacy_visibility">employees</field><field name="company_id" ref="base.main_company"/></record>
+    <record id="service_compressor" model="product.template">
+        <field name="name">Compressor maintenance</field><field name="type">service</field><field name="list_price">500000</field>
+        <field name="xyz_booking_service">True</field><field name="website_published">True</field><field name="service_tracking">no</field><field name="invoice_policy">order</field>
+    </record>
+    <record id="service_cooling" model="product.template">
+        <field name="name">Cooling system maintenance</field><field name="type">service</field><field name="list_price">700000</field>
+        <field name="xyz_booking_service">True</field><field name="website_published">True</field><field name="service_tracking">no</field><field name="invoice_policy">order</field>
+    </record>
+    <record id="mailpit_server" model="ir.mail_server"><field name="name">Local demo · Mailpit</field><field name="smtp_host">mailpit</field><field name="smtp_port">1025</field><field name="smtp_encryption">none</field><field name="sequence">1</field></record>
+    <record id="website_menu_service" model="website.menu"><field name="name">Book a maintenance visit</field><field name="url">/maintenance</field><field name="parent_id" ref="website.main_menu"/><field name="sequence">15</field></record>
+</odoo>

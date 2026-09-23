@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+service_report_manager,service report manager,model_xyz_service_report,xyz_service_core.group_manager,1,0,0,0
+service_report_director,service report director,model_xyz_service_report,xyz_service_core.group_director,1,0,0,0

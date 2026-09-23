@@ -1,0 +1,16 @@
+<templates xml:space="preserve">
+    <t t-name="xyz_service_core.LanguageSwitcher">
+        <Dropdown position="'bottom-end'" menuClass="'o_xyz_language_menu'">
+            <button class="o_xyz_language_switch" data-hotkey="shift+l" t-att-title="currentLanguage.name" t-att-aria-label="currentLanguage.name">
+                <i class="fa fa-globe me-1" role="img" t-att-aria-label="currentLanguage.name"/>
+                <span class="oe_topbar_name text-truncate" t-esc="shortCode"/>
+            </button>
+            <t t-set-slot="content">
+                <DropdownItem t-foreach="state.languages" t-as="lang" t-key="lang.code" onSelected="() => this.selectLanguage(lang.code)">
+                    <i class="fa fa-fw me-1" t-att-class="lang.code === user.context.lang ? 'fa-check text-primary' : 'fa-circle-o'"/>
+                    <span t-esc="lang.name"/>
+                </DropdownItem>
+            </t>
+        </Dropdown>
+    </t>
+</templates>

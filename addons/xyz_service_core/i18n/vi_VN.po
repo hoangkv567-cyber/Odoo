@@ -1,0 +1,1147 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* xyz_service_core
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: Vietnamese\n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.xyz_footer
+msgid "<small>Educational project · Team 5</small>"
+msgstr "<small>Dự án thực tập · Nhóm 5</small>"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.task_form_xyz
+msgid "Accept service"
+msgstr "Nghiệm thu dịch vụ"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.portal_jobs
+msgid "Acceptance"
+msgstr "Nghiệm thu"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_acceptance_ids
+msgid "Acceptance records"
+msgstr "Biên bản nghiệm thu"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Acceptance records cannot be deleted."
+msgstr "Biên bản nghiệm thu không thể xóa."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Acceptance records cannot be modified."
+msgstr "Biên bản nghiệm thu không thể chỉnh sửa."
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__message_needaction
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__message_needaction
+msgid "Action Needed"
+msgstr "Tác vụ cần thiết"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__activity_ids
+msgid "Activities"
+msgstr "Hoạt động"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Hoạt động ngoại lệ"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__activity_state
+msgid "Activity State"
+msgstr "Trạng thái hoạt động"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Biểu tượng loại hoạt động"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Actual labour hours:"
+msgstr "Giờ công thực tế:"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Actual materials"
+msgstr "Vật tư thực dùng"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__address
+msgid "Address"
+msgstr "Địa chỉ"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__after
+msgid "After"
+msgstr "Sau"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "After maintenance"
+msgstr "Sau bảo dưỡng"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_after
+msgid "After photo"
+msgstr "Ảnh sau bảo dưỡng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Air compressors · Cooling systems · Safety inspection"
+msgstr "Máy nén khí · Hệ thống lạnh · Kiểm tra an toàn"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/static/src/dispatch.xml:0
+msgid "All areas"
+msgstr "Tất cả khu vực"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/static/src/dispatch.xml:0
+msgid "All skills"
+msgstr "Tất cả kỹ năng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Amount (tax included)"
+msgstr "Thành tiền (gồm thuế)"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Assign a technician to an unstarted job first."
+msgstr "Vui lòng phân công kỹ thuật viên cho công việc chưa bắt đầu."
+
+#. module: xyz_service_core
+#: model:ir.model,name:xyz_service_core.model_ir_attachment
+msgid "Attachment"
+msgstr "Tệp đính kèm"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__message_attachment_count
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số tệp đính kèm"
+
+#. module: xyz_service_core
+#: model:ir.model.fields.selection,name:xyz_service_core.selection__project_task__xyz_state__acceptance
+msgid "Awaiting acceptance"
+msgstr "Chờ nghiệm thu"
+
+#. module: xyz_service_core
+#: model:ir.model.fields.selection,name:xyz_service_core.selection__project_task__xyz_state__new
+msgid "Awaiting dispatch"
+msgstr "Chờ điều phối"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__before
+msgid "Before"
+msgstr "Trước"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Before maintenance"
+msgstr "Trước bảo dưỡng"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_before
+msgid "Before photo"
+msgstr "Ảnh trước bảo dưỡng"
+
+#. module: xyz_service_core
+#: model:website.menu,name:xyz_service_core.website_menu_service
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.xyz_footer
+msgid "Book a maintenance visit"
+msgstr "Đặt lịch bảo dưỡng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Book equipment maintenance, receive a quotation and follow the "
+"service in one system."
+msgstr "Đặt lịch bảo dưỡng thiết bị, nhận báo giá và theo dõi dịch vụ trên "
+"một hệ thống."
+
+#. module: xyz_service_core
+#: model:ir.actions.act_window,name:xyz_service_core.action_booking
+#: model:ir.ui.menu,name:xyz_service_core.menu_bookings
+msgid "Bookings"
+msgstr "Yêu cầu đặt lịch"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Cancel job"
+msgstr "Hủy công việc"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.task_form_xyz
+msgid "Cancel service"
+msgstr "Hủy dịch vụ"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Cancel the unstarted job and release the reserved materials?"
+msgstr "Hủy công việc chưa bắt đầu và giải phóng vật tư đã giữ chỗ?"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.task_form_xyz
+msgid "Cancel the unstarted service and release the reserved materials?"
+msgstr "Hủy dịch vụ chưa bắt đầu và giải phóng giữ chỗ?"
+
+#. module: xyz_service_core
+#: model:ir.model.fields.selection,name:xyz_service_core.selection__project_task__xyz_state__cancel
+msgid "Cancelled"
+msgstr "Đã hủy"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Charge"
+msgstr "Nội dung tính phí"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.task_form_xyz
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Check in"
+msgstr "Check-in"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.task_form_xyz
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Check out"
+msgstr "Check-out"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Check out before accepting the service."
+msgstr "Vui lòng Check out trước khi nghiệm thu dịch vụ."
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Checklist"
+msgstr "Danh sách"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__company_id
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__company_id
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Complete the checklist, photos, signature and signatory."
+msgstr "Vui lòng hoàn thành checklist, chụp ảnh, chữ ký và tên người ký."
+
+#. module: xyz_service_core
+#: model:ir.model.fields.selection,name:xyz_service_core.selection__project_task__xyz_state__done
+msgid "Completed"
+msgstr "Hoàn thành"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Completed acceptance data is immutable."
+msgstr "Biên bản nghiệm thu đã hoàn tất là dữ liệu bất biến."
+
+#. module: xyz_service_core
+#: model:product.template,name:xyz_service_core.service_compressor
+msgid "Compressor maintenance"
+msgstr "Bảo dưỡng máy nén khí"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.task_form_xyz
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Confirm schedule"
+msgstr "Xác nhận lịch"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.task_form_xyz
+msgid "Confirm the customer inspected and signed for the work and the actual "
+"materials?"
+msgstr "Xác nhận khách hàng đã kiểm tra và ký nghiệm thu công việc và vật tư "
+"thực tế?"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.xyz_footer
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: xyz_service_core
+#: model:product.template,name:xyz_service_core.service_cooling
+msgid "Cooling system maintenance"
+msgstr "Bảo dưỡng hệ thống lạnh"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__create_uid
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__create_uid
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__create_date
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__create_date
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__partner_id
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__partner_id
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.task_form_xyz
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Customer acceptance"
+msgstr "Khách hàng nghiệm thu"
+
+#. module: xyz_service_core
+#: model:ir.model,name:xyz_service_core.model_xyz_equipment
+msgid "Customer equipment"
+msgstr "Thiết bị khách hàng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Customer representative:"
+msgstr "Đại diện khách hàng:"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_signature
+msgid "Customer signature"
+msgstr "Chữ ký khách hàng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Customer:"
+msgstr "Khách hàng:"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/static/src/dispatch.xml:0
+msgid "Day"
+msgstr "Ngày"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Describe the issue"
+msgstr "Mô tả tình trạng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Did the customer inspect the labour hours, materials and total before "
+"signing?"
+msgstr "Khách hàng đã kiểm tra giờ công, vật tư và tổng tiền trước khi ký?"
+
+#. module: xyz_service_core
+#: model:res.groups,name:xyz_service_core.group_director
+msgid "Director reports"
+msgstr "Xem báo cáo giám đốc"
+
+#. module: xyz_service_core
+#: model:ir.actions.client,name:xyz_service_core.action_dispatch
+#: model:ir.ui.menu,name:xyz_service_core.menu_dispatch
+msgid "Dispatch board"
+msgstr "Bảng điều phối"
+
+#. module: xyz_service_core
+#: model:res.groups,name:xyz_service_core.group_dispatcher
+msgid "Dispatcher"
+msgstr "Điều phối viên"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Dispatcher access required."
+msgstr "Yêu cầu quyền điều phối viên."
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__display_name
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__display_name
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.portal_jobs
+msgid "Download the acceptance record"
+msgstr "Tải biên bản"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/static/src/dispatch.xml:0
+msgid "Drag a job to change its time or technician. Double-click to open the job."
+msgstr "Kéo công việc để đổi giờ hoặc thợ. Nhấp đúp để mở phiếu."
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Educational demo environment. No real payment is taken."
+msgstr "Môi trường demo học phần. Không thu tiền thật."
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Email"
+msgstr "Email"
+
+#. module: xyz_service_core
+#: model:ir.model,name:xyz_service_core.model_hr_employee
+msgid "Employee"
+msgstr "Nhân viên"
+
+#. module: xyz_service_core
+#: model:ir.actions.act_window,name:xyz_service_core.action_equipment
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__equipment_id
+#: model:ir.ui.menu,name:xyz_service_core.menu_equipment
+msgid "Equipment"
+msgstr "Thiết bị khách hàng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Equipment name or code"
+msgstr "Tên / mã thiết bị"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Equipment:"
+msgstr "Thiết bị:"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_product_product__xyz_expected_hours
+#: model:ir.model.fields,field_description:xyz_service_core.field_product_template__xyz_expected_hours
+msgid "Expected hours"
+msgstr "Số giờ dự kiến"
+
+#. module: xyz_service_core
+#: model:ir.actions.act_window,name:xyz_service_core.action_service_tasks
+#: model:ir.ui.menu,name:xyz_service_core.menu_jobs
+msgid "Field jobs"
+msgstr "Công việc hiện trường"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Field service"
+msgstr "Dịch vụ hiện trường"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__message_follower_ids
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__message_partner_ids
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (Đối tác)"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_booking__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font biểu tượng, ví dụ: fa-tasks"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Full name"
+msgstr "Tên đầy đủ"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__has_message
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__has_message
+msgid "Has Message"
+msgstr "Có tin nhắn"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__id
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__id
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__id
+msgid "ID"
+msgstr "ID"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__activity_exception_icon
+msgid "Icon"
+msgstr "Biểu tượng"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_booking__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Biểu tượng cho thấy một hoạt động ngoại lệ."
+
+#. module: xyz_service_core
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_booking__message_needaction
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_equipment__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nếu chọn, bạn cần chú ý tới các tin nhắn mới."
+
+#. module: xyz_service_core
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_booking__message_has_error
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_booking__message_has_sms_error
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_equipment__message_has_error
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_equipment__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu chọn, một số tin nhắn sẽ có lỗi gửi."
+
+#. module: xyz_service_core
+#: model:ir.model.fields.selection,name:xyz_service_core.selection__project_task__xyz_state__working
+msgid "In progress"
+msgstr "Đang thực hiện"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__message_is_follower
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__message_is_follower
+msgid "Is Follower"
+msgstr "Là người theo dõi"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__description
+msgid "Issue description"
+msgstr "Mô tả tình trạng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.portal_jobs
+msgid "Job"
+msgstr "Chức vụ"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/static/src/language_switch.js:0
+msgid "Language updated, reloading the page…"
+msgstr "Đã đổi ngôn ngữ, đang tải lại trang…"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__write_uid
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__write_uid
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__write_date
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__write_date
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__lead_id
+msgid "Lead"
+msgstr "Lead"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/static/src/dispatch.xml:0
+msgid "Maintenance dispatch"
+msgstr "Điều phối bảo dưỡng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.portal_jobs
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.xyz_footer
+msgid "Maintenance history"
+msgstr "Lịch sử bảo dưỡng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Maintenance request"
+msgstr "Yêu cầu bảo dưỡng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_thanks
+msgid "Maintenance request received"
+msgstr "Đã nhận yêu cầu bảo dưỡng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Materials and charges"
+msgstr "Vật tư và chi phí"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__message_has_error
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi gửi tin nhắn"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__message_ids
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__message_ids
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Thời hạn hoạt động của tôi"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_thanks
+msgid "My quotations"
+msgstr "Báo giá của tôi"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__name
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__name
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "New"
+msgstr "Mới"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Sự kiện trên lịch cho hoạt động tiếp theo"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Thời hạn cho hoạt động tiếp theo"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__activity_summary
+msgid "Next Activity Summary"
+msgstr "Tóm tắt hoạt động tiếp theo"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__activity_type_id
+msgid "Next Activity Type"
+msgstr "Loại hoạt động tiếp theo"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__message_needaction_counter
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số lượng tác vụ"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__message_has_error_counter
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lượng lỗi"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_booking__message_needaction_counter
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_equipment__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Số tin nhắn cần xử lý"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_booking__message_has_error_counter
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_equipment__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số tin nhắn bị gửi lỗi"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.xyz_footer
+msgid "On-site compressor and cooling system maintenance.<br/>Transparent "
+"management from quotation to acceptance."
+msgstr "Bảo dưỡng máy nén khí và hệ thống lạnh tại hiện trường.<br/>Quản lý "
+"minh bạch từ báo giá đến nghiệm thu."
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "On-site service"
+msgstr "Dịch vụ tại hiện trường"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Only dispatchers can change assignments."
+msgstr "Chỉ điều phối viên mới có quyền thay đổi phân công."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Only the assigned technician may perform this action."
+msgstr "Chỉ kỹ thuật viên được phân công mới có quyền thực hiện thao tác này."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Only unstarted jobs may be rescheduled."
+msgstr "Chỉ có thể đổi lịch công việc chưa bắt đầu."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Only unstarted jobs without time entries can be cancelled."
+msgstr "Chỉ có thể hủy công việc chưa bắt đầu và chưa có giờ công."
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Phone"
+msgstr "Điện thoại"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_end
+msgid "Planned end"
+msgstr "Kết thúc dự kiến"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.portal_jobs
+msgid "Planned schedule"
+msgstr "Lịch dự kiến"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_start
+msgid "Planned start"
+msgstr "Bắt đầu dự kiến"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Please check the details and choose a time in the future."
+msgstr "Vui lòng kiểm tra thông tin và chọn thời gian trong tương lai."
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Preferred time (Vietnam time)"
+msgstr "Thời gian mong muốn (giờ Việt Nam)"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Proactive maintenance.<br/>Sustainable operations."
+msgstr "Bảo dưỡng chủ động.<br/>Vận hành bền vững."
+
+#. module: xyz_service_core
+#: model:ir.model,name:xyz_service_core.model_product_template
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__rating_ids
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__rating_ids
+msgid "Ratings"
+msgstr "Đánh giá"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/static/src/dispatch.xml:0
+msgid "Reload"
+msgstr "Tải lại"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__requested_start
+msgid "Requested start"
+msgstr "Thời gian mong muốn"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_product_product__xyz_required_skill_ids
+#: model:ir.model.fields,field_description:xyz_service_core.field_product_template__xyz_required_skill_ids
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_required_skill_ids
+msgid "Required skills"
+msgstr "Kỹ năng yêu cầu"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__activity_user_id
+msgid "Responsible User"
+msgstr "Người phụ trách"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "SERVICE ACCEPTANCE RECORD"
+msgstr "BIÊN BẢN NGHIỆM THU BẢO DƯỠNG"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__message_has_sms_error
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Lỗi gửi SMS"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_checked_safety
+msgid "Safety checked"
+msgstr "Đã kiểm tra an toàn"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Safety inspection, maintenance and equipment test run completed."
+msgstr "Đã hoàn thành kiểm tra an toàn, bảo dưỡng và chạy thử thiết bị."
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__sale_id
+msgid "Sale"
+msgstr "Bán"
+
+#. module: xyz_service_core
+#: model:ir.model,name:xyz_service_core.model_sale_order
+msgid "Sales Order"
+msgstr "Đơn bán hàng"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Schedule and site"
+msgstr "Lịch và hiện trường"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Schedule the job before checking in."
+msgstr "Vui lòng xếp lịch công việc trước khi Check in."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/static/src/dispatch.js:0
+msgid "Schedule updated"
+msgstr "Đã cập nhật lịch"
+
+#. module: xyz_service_core
+#: model:ir.model.fields.selection,name:xyz_service_core.selection__project_task__xyz_state__scheduled
+msgid "Scheduled"
+msgstr "Đã xếp lịch"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Select a published booking service."
+msgstr "Vui lòng chọn dịch vụ đặt lịch đã công bố."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Select an active technician in this company."
+msgstr "Vui lòng chọn kỹ thuật viên đang hoạt động trong công ty này."
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Send the request and get a quotation"
+msgstr "Gửi yêu cầu và nhận báo giá"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__serial
+msgid "Serial"
+msgstr "Số sê-ri"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__product_id
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Service"
+msgstr "Dịch vụ"
+
+#. module: xyz_service_core
+#: model:ir.model,name:xyz_service_core.model_xyz_acceptance
+msgid "Service acceptance"
+msgstr "Biên bản nghiệm thu bảo dưỡng"
+
+#. module: xyz_service_core
+#: model:ir.actions.report,name:xyz_service_core.report_acceptance
+msgid "Service acceptance record"
+msgstr "Biên bản nghiệm thu dịch vụ"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_hr_employee__xyz_area
+msgid "Service area"
+msgstr "Khu vực dịch vụ"
+
+#. module: xyz_service_core
+#: model:ir.model,name:xyz_service_core.model_xyz_booking
+msgid "Service booking"
+msgstr "Yêu cầu đặt lịch dịch vụ"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_checked_service
+msgid "Service completed"
+msgstr "Đã hoàn thành bảo dưỡng"
+
+#. module: xyz_service_core
+#: model:res.groups,name:xyz_service_core.group_manager
+msgid "Service manager"
+msgstr "Quản lý dịch vụ"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.xyz_footer
+msgid "Services"
+msgstr "Dịch vụ"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Sign acceptance and create draft invoice"
+msgstr "Ký nghiệm thu và lập hóa đơn nháp"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__signature
+msgid "Signature"
+msgstr "Chữ ký"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__signed_at
+msgid "Signed At"
+msgstr "Thời điểm ký"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_signer
+msgid "Signed by"
+msgstr "Người đại diện ký"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Signed on:"
+msgstr "Ngày ký:"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "Site address"
+msgstr "Địa chỉ hiện trường"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Site photos"
+msgstr "Ảnh hiện trường"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__snapshot
+msgid "Snapshot"
+msgstr "Bản chụp dữ liệu"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.portal_jobs
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_booking__activity_state
+msgid "Status based on activities\nOverdue: Due date is already "
+"passed\nToday: Activity date is today\nPlanned: Future activities."
+msgstr "Trạng thái dựa trên hoạt động\nQuá hạn: Hạn chót hạn đã qua\nHôm nay: "
+"Hôm nay là ngày phải thực hiện\nKế hoạch: Cần thực hiện trong tương lai."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Stop the other running timer first."
+msgstr "Vui lòng dừng bộ đếm thời gian đang chạy khác trước."
+
+#. module: xyz_service_core
+#: model:ir.model,name:xyz_service_core.model_project_task
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_acceptance__task_id
+msgid "Task"
+msgstr "Nhiệm vụ"
+
+#. module: xyz_service_core
+#: model:project.project,label_tasks:xyz_service_core.project_service
+msgid "Tasks"
+msgstr "Nhiệm vụ"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_employee_id
+#: model:res.groups,name:xyz_service_core.group_technician
+msgid "Technician"
+msgstr "Kỹ thuật viên"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Technicians can only update on-site evidence and material usage."
+msgstr "Kỹ thuật viên chỉ có thể cập nhật minh chứng hiện trường và vật tư tiêu hao."
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_checked_test
+msgid "Test run passed"
+msgstr "Đã chạy thử đạt chuẩn"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "The job must be entirely inside the technician working hours."
+msgstr "Lịch công việc phải nằm hoàn toàn trong ca làm việc của kỹ thuật viên."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "The planned end must follow the start."
+msgstr "Thời gian kết thúc dự kiến phải sau thời gian bắt đầu."
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_thanks
+msgid "The quotation is sent by email. A dispatcher confirms the schedule with you."
+msgstr "Báo giá sẽ được gửi qua email. Điều phối viên sẽ xác nhận lịch với bạn."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "The technician does not have every required skill."
+msgstr "Kỹ thuật viên không có đủ các kỹ năng yêu cầu."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "The technician needs an internal user account."
+msgstr "Kỹ thuật viên cần có tài khoản người dùng nội bộ."
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "The time you choose is a preference. A dispatcher confirms it after "
+"checking the technician and the materials."
+msgstr "Lịch bạn chọn là thời gian mong muốn. Điều phối viên sẽ xác nhận sau "
+"khi kiểm tra thợ và vật tư."
+
+#. module: xyz_service_core
+#: model:ir.model.constraint,message:xyz_service_core.constraint_xyz_booking_token_unique
+msgid "This booking was already submitted."
+msgstr "Yêu cầu đặt lịch này đã được gửi trước đó."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "This technician already has a job in this time range."
+msgstr "Kỹ thuật viên này đã có lịch làm việc trong khoảng thời gian này."
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "Timesheets"
+msgstr "Bảng chấm công"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/static/src/dispatch.xml:0
+msgid "Today"
+msgstr "Hôm nay"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__token
+msgid "Token"
+msgstr "Mã xác thực"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Total confirmed by customer:"
+msgstr "Tổng tiền khách xác nhận:"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_booking__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Loại hoạt động ngoại lệ trong bản ghi."
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/static/src/dispatch.js:0
+msgid "Unassigned"
+msgstr "Chưa phân công"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.acceptance_document
+msgid "Unit"
+msgstr "Đơn vị"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "Use the service workflow buttons to change progress."
+msgstr "Sử dụng các nút quy trình nghiệp vụ để cập nhật tiến độ."
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__user_id
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__user_id
+msgid "User"
+msgstr "Người dùng"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_booking__website_message_ids
+#: model:ir.model.fields,field_description:xyz_service_core.field_xyz_equipment__website_message_ids
+msgid "Website Messages"
+msgstr "Thông báo trên trang web"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_booking__website_message_ids
+#: model:ir.model.fields,help:xyz_service_core.field_xyz_equipment__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử trao đổi qua trang web"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/static/src/dispatch.xml:0
+msgid "Week"
+msgstr "Tuần"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.xyz_brand
+msgid "XYZ <small style=\"font-size:10px;letter-spacing:1px\">INDUSTRIAL</small>"
+msgstr "XYZ <small style=\"font-size:10px;letter-spacing:1px\">INDUSTRIAL</small>"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.booking_page
+msgid "XYZ INDUSTRIAL SERVICES"
+msgstr "XYZ INDUSTRIAL SERVICES"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.xyz_footer
+msgid "XYZ Industrial Services"
+msgstr "XYZ Industrial Services"
+
+#. module: xyz_service_core
+#: model:ir.module.category,name:xyz_service_core.module_category_xyz
+#: model:ir.ui.menu,name:xyz_service_core.menu_xyz
+msgid "XYZ Service"
+msgstr "Dịch vụ bảo dưỡng XYZ"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_product_product__xyz_booking_service
+#: model:ir.model.fields,field_description:xyz_service_core.field_product_template__xyz_booking_service
+msgid "XYZ booking service"
+msgstr "Dịch vụ đặt lịch XYZ"
+
+#. module: xyz_service_core
+#: code:addons/xyz_service_core/models/service.py:0
+msgid "XYZ on-site service"
+msgstr "Dịch vụ hiện trường XYZ"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.task_form_xyz
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.view_field_job_form
+msgid "XYZ service details"
+msgstr "Chi tiết dịch vụ XYZ"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.product_booking_settings
+msgid "XYZ website booking setup"
+msgstr "Cấu hình đặt lịch website XYZ"
+
+#. module: xyz_service_core
+#: model:project.project,name:xyz_service_core.project_service
+msgid "XYZ · Field service"
+msgstr "XYZ · Bảo dưỡng hiện trường"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_booking_id
+msgid "Xyz Booking"
+msgstr "Yêu cầu đặt lịch"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_can_dispatch
+msgid "Xyz Can Dispatch"
+msgstr "Có quyền điều phối"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_can_work
+msgid "Xyz Can Work"
+msgstr "Có quyền thực hiện"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_equipment_id
+msgid "Xyz Equipment"
+msgstr "Thiết bị khách hàng"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_finished_at
+msgid "Xyz Finished At"
+msgstr "Thời điểm hoàn tất"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_map_url
+msgid "Xyz Map Url"
+msgstr "Liên kết bản đồ"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_state
+msgid "Xyz State"
+msgstr "Trạng thái dịch vụ"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_sale_order__xyz_task_id
+msgid "Xyz Task"
+msgstr "Công việc hiện trường"
+
+#. module: xyz_service_core
+#: model:ir.model.fields,field_description:xyz_service_core.field_project_task__xyz_timer_start
+msgid "Xyz Timer Start"
+msgstr "Bắt đầu bấm giờ"
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.portal_jobs
+msgid "You have no maintenance jobs yet."
+msgstr "Bạn chưa có công việc bảo dưỡng."
+
+#. module: xyz_service_core
+#: model_terms:ir.ui.view,arch_db:xyz_service_core.xyz_footer
+msgid "service@xyz.example.test<br/>TP. Hồ Chí Minh"
+msgstr "service@xyz.example.test<br/>TP. Hồ Chí Minh"

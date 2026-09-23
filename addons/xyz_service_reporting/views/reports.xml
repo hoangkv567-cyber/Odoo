@@ -1,0 +1,29 @@
+<odoo>
+    <record id="report_company_rule" model="ir.rule"><field name="name">Service report companies</field><field name="model_id" ref="model_xyz_service_report"/><field name="domain_force">[('company_id', 'in', company_ids)]</field></record>
+    <record id="report_pivot" model="ir.ui.view"><field name="name">xyz.report.pivot</field><field name="model">xyz.service.report</field><field name="arch" type="xml"><pivot string="Service performance"><field name="employee_id" type="row"/><field name="partner_id" type="row"/><field name="date" interval="month" type="col"/><field name="revenue" type="measure"/><field name="material_cost" type="measure"/><field name="hours" type="measure"/><field name="completed" type="measure"/><field name="on_time_rate" type="measure"/><field name="residual" type="measure"/><field name="current_amount" type="measure"/><field name="overdue" type="measure"/></pivot></field></record>
+    <record id="report_graph" model="ir.ui.view"><field name="name">xyz.report.graph</field><field name="model">xyz.service.report</field><field name="arch" type="xml"><graph string="Technician performance" type="bar"><field name="employee_id"/><field name="completed" type="measure"/><field name="hours" type="measure"/></graph></field></record>
+    <record id="report_graph_revenue" model="ir.ui.view"><field name="name">xyz.report.graph.revenue</field><field name="model">xyz.service.report</field><field name="arch" type="xml"><graph string="Revenue and material cost" type="line"><field name="date" interval="month"/><field name="revenue" type="measure"/><field name="material_cost" type="measure"/></graph></field></record>
+    <record id="report_graph_receivable" model="ir.ui.view"><field name="name">xyz.report.graph.receivable</field><field name="model">xyz.service.report</field><field name="arch" type="xml"><graph string="Receivables by customer" type="bar"><field name="partner_id"/><field name="current_amount" type="measure"/><field name="overdue" type="measure"/></graph></field></record>
+    <record id="report_list" model="ir.ui.view"><field name="name">xyz.report.list</field><field name="model">xyz.service.report</field><field name="arch" type="xml"><list create="0"><field name="date"/><field name="name"/><field name="partner_id"/><field name="employee_id"/><field name="state"/><field name="revenue"/><field name="material_cost"/><field name="hours"/><field name="current_amount"/><field name="overdue"/></list></field></record>
+    <!-- The client can only switch by view type, so each chart gets its own action and the
+         view ids are declared through ir.actions.act_window.view (the `views` field is computed). -->
+    <record id="action_report" model="ir.actions.act_window">
+        <field name="name">Service dashboard</field><field name="res_model">xyz.service.report</field><field name="view_mode">pivot,graph,list</field>
+    </record>
+    <record id="action_report_view_pivot" model="ir.actions.act_window.view"><field name="act_window_id" ref="action_report"/><field name="sequence">1</field><field name="view_mode">pivot</field><field name="view_id" ref="report_pivot"/></record>
+    <record id="action_report_view_graph" model="ir.actions.act_window.view"><field name="act_window_id" ref="action_report"/><field name="sequence">2</field><field name="view_mode">graph</field><field name="view_id" ref="report_graph"/></record>
+    <record id="action_report_view_list" model="ir.actions.act_window.view"><field name="act_window_id" ref="action_report"/><field name="sequence">3</field><field name="view_mode">list</field><field name="view_id" ref="report_list"/></record>
+    <record id="action_report_revenue" model="ir.actions.act_window">
+        <field name="name">Revenue and material cost</field><field name="res_model">xyz.service.report</field><field name="view_mode">graph,pivot</field>
+    </record>
+    <record id="action_report_revenue_view_graph" model="ir.actions.act_window.view"><field name="act_window_id" ref="action_report_revenue"/><field name="sequence">1</field><field name="view_mode">graph</field><field name="view_id" ref="report_graph_revenue"/></record>
+    <record id="action_report_revenue_view_pivot" model="ir.actions.act_window.view"><field name="act_window_id" ref="action_report_revenue"/><field name="sequence">2</field><field name="view_mode">pivot</field><field name="view_id" ref="report_pivot"/></record>
+    <record id="action_report_receivable" model="ir.actions.act_window">
+        <field name="name">Receivables by customer</field><field name="res_model">xyz.service.report</field><field name="view_mode">graph,pivot</field>
+    </record>
+    <record id="action_report_receivable_view_graph" model="ir.actions.act_window.view"><field name="act_window_id" ref="action_report_receivable"/><field name="sequence">1</field><field name="view_mode">graph</field><field name="view_id" ref="report_graph_receivable"/></record>
+    <record id="action_report_receivable_view_pivot" model="ir.actions.act_window.view"><field name="act_window_id" ref="action_report_receivable"/><field name="sequence">2</field><field name="view_mode">pivot</field><field name="view_id" ref="report_pivot"/></record>
+    <menuitem id="menu_report" name="Management reports" parent="xyz_service_core.menu_xyz" action="action_report" groups="xyz_service_core.group_manager,xyz_service_core.group_director" sequence="60"/>
+    <menuitem id="menu_report_revenue" name="Revenue and material cost" parent="menu_report" action="action_report_revenue" groups="xyz_service_core.group_manager,xyz_service_core.group_director" sequence="10"/>
+    <menuitem id="menu_report_receivable" name="Receivables by customer" parent="menu_report" action="action_report_receivable" groups="xyz_service_core.group_manager,xyz_service_core.group_director" sequence="20"/>
+</odoo>

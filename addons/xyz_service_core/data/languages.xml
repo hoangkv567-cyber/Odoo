@@ -1,0 +1,13 @@
+<odoo>
+    <!-- English (en_US) is the source language of the modules: every label, view, report and
+         website template is written in English and translated through the i18n/vi_VN.po files.
+         Activating Vietnamese makes it selectable (user preferences, top-bar switcher, website
+         selector) and lets the module installer load its translations for it. The record is
+         written through a function call, because `base.lang_vi_VN` already exists in
+         ir_model_data and a noupdate record would simply be skipped. -->
+    <function model="res.lang" name="write" eval="[ref('base.lang_vi_VN'), {'active': True}]"/>
+    <!-- The website only offers the languages attached to it. Vietnamese is the language the
+         demo company works in, so it is added to the site and used as its default; visitors can
+         still switch to English from the header selector. -->
+    <function model="website" name="write" eval="[ref('website.default_website'), {'language_ids': [(4, ref('base.lang_vi_VN'))], 'default_lang_id': ref('base.lang_vi_VN')}]"/>
+</odoo>

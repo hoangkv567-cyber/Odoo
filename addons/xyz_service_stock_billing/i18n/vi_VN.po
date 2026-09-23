@@ -1,0 +1,388 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* xyz_service_stock_billing
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: Vietnamese\n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "<p>Please review the outstanding invoice in your customer portal.</p>"
+msgstr "<p>Vui lòng kiểm tra hóa đơn còn công nợ trong cổng thông tin khách "
+"hàng.</p>"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "A truck stock location is required."
+msgstr "Yêu cầu phải có vị trí kho trên xe."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Acceptance revision opened. Previous signed evidence is retained; "
+"previous stock consumption has been reversed."
+msgstr "Đã mở lại nghiệm thu. Minh chứng đã ký trước đó được lưu giữ; lượng "
+"xuất kho trước đã được đảo ngược."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Accepted commercial terms are immutable."
+msgstr "Điều khoản thương mại đã nghiệm thu là dữ liệu bất biến."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Accepted jobs cannot be reassigned or have materials changed."
+msgstr "Công việc đã nghiệm thu không thể phân công lại hoặc đổi vật tư."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Accepted materials are immutable."
+msgstr "Vật tư đã nghiệm thu là dữ liệu bất biến."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Accepted service timesheets are immutable."
+msgstr "Giờ công dịch vụ đã nghiệm thu là dữ liệu bất biến."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Accounting access required."
+msgstr "Yêu cầu quyền kế toán."
+
+#. module: xyz_service_stock_billing
+#: model_terms:ir.ui.view,arch_db:xyz_service_stock_billing.field_job_billing
+#: model_terms:ir.ui.view,arch_db:xyz_service_stock_billing.task_stock_form
+msgid "Accounting confirms the cash received"
+msgstr "Kế toán xác nhận nhận tiền"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_project_task__xyz_material_ids
+msgid "Actual materials"
+msgstr "Vật tư thực dùng"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model,name:xyz_service_stock_billing.model_xyz_material
+msgid "Actual service material"
+msgstr "Vật tư thực dùng"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_project_task__xyz_actual_amount
+msgid "Actual total for customer approval"
+msgstr "Tổng tiền thực tế nghiệm thu"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Add stock products to the sales order before preparing the truck."
+msgstr "Vui lòng thêm sản phẩm kho vào đơn bán hàng trước khi chuẩn bị hàng lên xe."
+
+#. module: xyz_service_stock_billing
+#: model:ir.model,name:xyz_service_stock_billing.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Dòng phân tích"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Assign a technician with a truck location."
+msgstr "Vui lòng phân công kỹ thuật viên có cấu hình kho xe."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Billing and warehouse evidence is managed by workflow actions."
+msgstr "Chứng từ thanh toán và kho được quản lý theo quy trình."
+
+#. module: xyz_service_stock_billing
+#: model_terms:ir.ui.view,arch_db:xyz_service_stock_billing.task_stock_form
+msgid "Cancel the draft invoice and reverse the consumption so the customer "
+"signs the acceptance again? The previous signed evidence is retained."
+msgstr "Hủy hóa đơn nháp và đảo tiêu hao để khách ký nghiệm thu lại? Minh "
+"chứng chữ ký cũ vẫn được lưu giữ."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Cannot add time to a closed service job."
+msgstr "Không thể thêm giờ công vào công việc đã đóng."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Cannot change materials on closed jobs."
+msgstr "Không thể thay đổi vật tư của công việc đã đóng."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Cannot transfer more %s than physically available."
+msgstr "Không thể chuyển nhiều hơn số lượng %s hiện có thực tế trong kho."
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_project_task__xyz_cash_confirmed
+msgid "Cash confirmed by accounting"
+msgstr "Kế toán đã xác nhận thu tiền"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Cash must be nonnegative and cannot change after confirmation."
+msgstr "Tiền mặt phải không âm và không thể thay đổi sau khi đã xác nhận."
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_project_task__xyz_cash_reported
+msgid "Cash reported by technician"
+msgstr "Tiền mặt thợ thu"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Configure a cash journal first."
+msgstr "Vui lòng cấu hình sổ nhật ký tiền mặt trước."
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__cost
+msgid "Cost"
+msgstr "Chi phí"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__create_uid
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_payment_reminder__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__create_date
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_payment_reminder__create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_project_task__company_currency_id
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__display_name
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_payment_reminder__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model,name:xyz_service_stock_billing.model_hr_employee
+msgid "Employee"
+msgstr "Nhân viên"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Expected one invoice for the service order."
+msgstr "Mỗi đơn dịch vụ dự kiến tạo một hóa đơn."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Handle the existing truck transfer before changing technicians."
+msgstr "Vui lòng xử lý phiếu chuyển kho xe hiện tại trước khi đổi kỹ thuật viên."
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__id
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_payment_reminder__id
+msgid "ID"
+msgstr "ID"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Insufficient truck stock for %s."
+msgstr "Kho xe không đủ tồn kho cho %s."
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_project_task__xyz_invoice_id
+msgid "Invoice"
+msgstr "Hóa đơn"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model,name:xyz_service_stock_billing.model_xyz_payment_reminder
+msgid "Invoice reminder delivery log"
+msgstr "Nhật ký gửi nhắc nợ"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__write_uid
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_payment_reminder__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__write_date
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_payment_reminder__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: xyz_service_stock_billing
+#: model:product.template,name:xyz_service_stock_billing.product_labor
+msgid "Maintenance labour / hour"
+msgstr "Nhân công bảo dưỡng / giờ"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Material ownership and stock evidence are managed by the system."
+msgstr "Sở hữu vật tư và chứng từ kho được quản lý bởi hệ thống."
+
+#. module: xyz_service_stock_billing
+#: model_terms:ir.ui.view,arch_db:xyz_service_stock_billing.task_stock_form
+msgid "Materials and payment"
+msgstr "Vật tư và thanh toán"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_payment_reminder__milestone
+msgid "Milestone"
+msgstr "Mốc thời gian"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__move_id
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_payment_reminder__move_id
+msgid "Move"
+msgstr "Bút toán"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Post the invoice and enter a positive cash amount no greater than the "
+"balance."
+msgstr "Vui lòng vào sổ hóa đơn và nhập số tiền mặt dương không vượt quá số "
+"dư công nợ."
+
+#. module: xyz_service_stock_billing
+#: model_terms:ir.ui.view,arch_db:xyz_service_stock_billing.field_job_billing
+#: model_terms:ir.ui.view,arch_db:xyz_service_stock_billing.task_stock_form
+msgid "Prepare truck materials"
+msgstr "Chuẩn bị vật tư lên xe"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__product_id
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__quantity
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.constraint,message:xyz_service_stock_billing.constraint_xyz_payment_reminder_unique_reminder
+msgid "Reminder already queued."
+msgstr "Nhắc nợ này đã được ghi nhận trước đó."
+
+#. module: xyz_service_stock_billing
+#: model_terms:ir.ui.view,arch_db:xyz_service_stock_billing.field_job_billing
+#: model_terms:ir.ui.view,arch_db:xyz_service_stock_billing.task_stock_form
+msgid "Reopen for a new acceptance"
+msgstr "Mở lại để nghiệm thu mới"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Return the prepared truck materials before cancelling this job."
+msgstr "Vui lòng trả lại vật tư đã cấp lên xe trước khi hủy công việc này."
+
+#. module: xyz_service_stock_billing
+#: model_terms:ir.ui.view,arch_db:xyz_service_stock_billing.field_job_billing
+msgid "Reverse the consumption and cancel the draft invoice so the customer "
+"signs again?"
+msgstr "Đảo tiêu hao và hủy hóa đơn nháp để khách ký lại?"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Revise the acceptance before changing its commercial terms."
+msgstr "Vui lòng mở lại nghiệm thu trước khi thay đổi các điều khoản thương mại."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Revision is only available before the invoice is posted. Use a "
+"separate follow-up job after posting."
+msgstr "Chỉ có thể mở lại nghiệm thu trước khi hóa đơn được vào sổ (post). "
+"Nếu đã vào sổ, vui lòng tạo công việc phát sinh riêng."
+
+#. module: xyz_service_stock_billing
+#: model:ir.model,name:xyz_service_stock_billing.model_sale_order
+msgid "Sales Order"
+msgstr "Đơn bán hàng"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model,name:xyz_service_stock_billing.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Dòng đơn bán hàng"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model,name:xyz_service_stock_billing.model_xyz_booking
+msgid "Service booking"
+msgstr "Yêu cầu đặt lịch dịch vụ"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Service manager access required."
+msgstr "Yêu cầu quyền quản lý dịch vụ."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Service materials must be invoiced on delivered quantities. Correct "
+"the product invoicing policy first."
+msgstr "Vật tư dịch vụ phải được tính hóa đơn theo số lượng giao thực tế. Vui "
+"lòng kiểm tra lại chính sách xuất hóa đơn của sản phẩm."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Stock evidence is managed by the system."
+msgstr "Chứng từ kho được quản lý tự động bởi hệ thống."
+
+#. module: xyz_service_stock_billing
+#: model:ir.model,name:xyz_service_stock_billing.model_project_task
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_xyz_material__task_id
+msgid "Task"
+msgstr "Nhiệm vụ"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model,name:xyz_service_stock_billing.model_stock_picking
+msgid "Transfer"
+msgstr "Lệnh chuyển hàng"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_hr_employee__xyz_location_id
+msgid "Truck stock location"
+msgstr "Vị trí kho trên xe"
+
+#. module: xyz_service_stock_billing
+#: model:ir.model.fields,field_description:xyz_service_stock_billing.field_project_task__xyz_transfer_id
+msgid "Truck transfer"
+msgstr "Phiếu chuyển kho"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Use positive quantities of tracked goods."
+msgstr "Vui lòng nhập số lượng dương cho hàng hóa quản lý kho."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "Warehouse access required."
+msgstr "Yêu cầu quyền quản lý kho."
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "XYZ customer deliveries are validated by service acceptance using "
+"actual quantities."
+msgstr "Phiếu giao hàng khách của XYZ được xác nhận tự động khi nghiệm thu "
+"dịch vụ theo số lượng thực tế."
+
+#. module: xyz_service_stock_billing
+#: model_terms:ir.ui.view,arch_db:xyz_service_stock_billing.employee_truck_form
+msgid "XYZ field service"
+msgstr "Dịch vụ hiện trường XYZ"
+
+#. module: xyz_service_stock_billing
+#: model:ir.actions.server,name:xyz_service_stock_billing.reminder_cron_ir_actions_server
+msgid "XYZ overdue reminders"
+msgstr "XYZ nhắc nợ quá hạn"
+
+#. module: xyz_service_stock_billing
+#: code:addons/xyz_service_stock_billing/models/billing.py:0
+msgid "XYZ · Payment reminder %s"
+msgstr "XYZ · Nhắc thanh toán %s"

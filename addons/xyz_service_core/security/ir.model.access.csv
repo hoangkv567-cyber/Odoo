@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+task_tech,task technician,project.model_project_task,group_technician,1,1,0,0
+booking_sales,booking sales,model_xyz_booking,sales_team.group_sale_salesman,1,0,0,0
+booking_tech,booking technician,model_xyz_booking,group_technician,1,0,0,0
+booking_dispatch,booking dispatcher,model_xyz_booking,group_dispatcher,1,0,0,0
+booking_manager,booking manager,model_xyz_booking,group_manager,1,1,1,0
+equipment_sales,equipment sales,model_xyz_equipment,sales_team.group_sale_salesman,1,1,1,0
+equipment_dispatch,equipment dispatch,model_xyz_equipment,group_dispatcher,1,1,1,0
+equipment_tech,equipment technician,model_xyz_equipment,group_technician,1,0,0,0
+acceptance_tech,acceptance technician,model_xyz_acceptance,group_technician,1,0,0,0
+acceptance_dispatch,acceptance dispatch,model_xyz_acceptance,group_dispatcher,1,0,0,0
+acceptance_sales,acceptance sales,model_xyz_acceptance,sales_team.group_sale_salesman,1,0,0,0

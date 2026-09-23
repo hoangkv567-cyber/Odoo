@@ -1,0 +1,6 @@
+<odoo noupdate="1">
+    <record id="product_labor" model="product.template"><field name="name">Maintenance labour / hour</field><field name="type">service</field><field name="list_price">200000</field><field name="invoice_policy">delivery</field><field name="service_type">manual</field><field name="service_tracking">no</field><field name="uom_id" ref="uom.product_uom_hour"/><field name="uom_po_id" ref="uom.product_uom_hour"/></record>
+    <record id="truck_1" model="stock.location"><field name="name">Technician truck 1</field><field name="usage">internal</field><field name="location_id" ref="stock.stock_location_locations"/><field name="company_id" ref="base.main_company"/></record>
+    <record id="truck_2" model="stock.location"><field name="name">Technician truck 2</field><field name="usage">internal</field><field name="location_id" ref="stock.stock_location_locations"/><field name="company_id" ref="base.main_company"/></record>
+    <record id="reminder_cron" model="ir.cron"><field name="name">XYZ overdue reminders</field><field name="model_id" ref="model_xyz_payment_reminder"/><field name="state">code</field><field name="code">model._cron_remind()</field><field name="interval_number">1</field><field name="interval_type">days</field></record>
+</odoo>

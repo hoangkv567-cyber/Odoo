@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+account_task,account service task,project.model_project_task,account.group_account_invoice,1,1,0,0
+account_equipment,account equipment,xyz_service_core.model_xyz_equipment,account.group_account_invoice,1,0,0,0
+account_booking,account booking,xyz_service_core.model_xyz_booking,account.group_account_invoice,1,0,0,0
+account_material,account material,model_xyz_material,account.group_account_invoice,1,0,0,0
+account_acceptance,account acceptance,xyz_service_core.model_xyz_acceptance,account.group_account_invoice,1,0,0,0
+account_sales_read,account sales evidence,sale.model_sale_order,account.group_account_invoice,1,0,0,0
+account_sales_line_read,account sales lines,sale.model_sale_order_line,account.group_account_invoice,1,0,0,0
+account_stock_read,account stock evidence,stock.model_stock_move,account.group_account_invoice,1,0,0,0
+account_picking_read,account picking evidence,stock.model_stock_picking,account.group_account_invoice,1,0,0,0
+material_tech,material technician,model_xyz_material,xyz_service_core.group_technician,1,1,1,1
+material_dispatch,material dispatcher,model_xyz_material,xyz_service_core.group_dispatcher,1,1,1,1
+reminder_account,reminder account,model_xyz_payment_reminder,account.group_account_invoice,1,0,0,0

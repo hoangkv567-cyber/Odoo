@@ -1,0 +1,20 @@
+<odoo>
+    <record id="customer_sales_boundary" model="ir.rule"><field name="name">XYZ sales owns customer records</field><field name="model_id" ref="base.model_res_partner"/><field name="domain_force">['|', ('customer_rank', '=', 0), ('user_id', '=', user.id)] if user.has_group('sales_team.group_sale_salesman') and not user.has_group('sales_team.group_sale_salesman_all_leads') and not user.has_group('account.group_account_invoice') and not user.has_group('xyz_service_core.group_dispatcher') else [(1, '=', 1)]</field></record>
+    <record id="task_technician_allow" model="ir.rule"><field name="name">Technicians update assigned tasks</field><field name="model_id" ref="project.model_project_task"/><field name="groups" eval="[(4, ref('group_technician'))]"/><field name="domain_force">[('user_ids', 'in', [user.id])]</field></record>
+    <record id="task_technician_boundary" model="ir.rule">
+        <field name="name">XYZ technician boundary (global intersection)</field><field name="model_id" ref="project.model_project_task"/>
+        <field name="domain_force">[(1, '=', 1)] if not user.has_group('xyz_service_core.group_technician') or user.has_group('xyz_service_core.group_dispatcher') else [('user_ids', 'in', [user.id])]</field>
+    </record>
+    <record id="booking_boundary" model="ir.rule">
+        <field name="name">XYZ booking owner</field><field name="model_id" ref="model_xyz_booking"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)] if user.has_group('xyz_service_core.group_dispatcher') or user.has_group('account.group_account_invoice') else [('company_id', 'in', company_ids), ('id', 'in', user.env['project.task'].search([('user_ids', 'in', [user.id])]).mapped('xyz_booking_id').ids)] if user.has_group('xyz_service_core.group_technician') else [('company_id', 'in', company_ids), ('user_id', '=', user.id)]</field>
+    </record>
+    <record id="equipment_boundary" model="ir.rule">
+        <field name="name">XYZ equipment owner</field><field name="model_id" ref="model_xyz_equipment"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)] if user.has_group('xyz_service_core.group_dispatcher') or user.has_group('account.group_account_invoice') else [('company_id', 'in', company_ids), ('id', 'in', user.env['project.task'].search([('user_ids', 'in', [user.id])]).mapped('xyz_equipment_id').ids)] if user.has_group('xyz_service_core.group_technician') else [('company_id', 'in', company_ids), ('user_id', '=', user.id)]</field>
+    </record>
+    <record id="acceptance_boundary" model="ir.rule">
+        <field name="name">XYZ acceptance owner</field><field name="model_id" ref="model_xyz_acceptance"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)] if user.has_group('xyz_service_core.group_dispatcher') or user.has_group('account.group_account_invoice') else [('company_id', 'in', company_ids), ('task_id.user_ids', 'in', [user.id])] if user.has_group('xyz_service_core.group_technician') else [('company_id', 'in', company_ids), ('task_id.xyz_booking_id.user_id', '=', user.id)]</field>
+    </record>
+</odoo>

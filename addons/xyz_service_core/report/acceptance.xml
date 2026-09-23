@@ -1,0 +1,15 @@
+<odoo>
+    <record id="report_acceptance" model="ir.actions.report"><field name="name">Service acceptance record</field><field name="model">xyz.acceptance</field><field name="report_type">qweb-pdf</field><field name="report_name">xyz_service_core.acceptance_document</field><field name="binding_model_id" ref="model_xyz_acceptance"/></record>
+    <template id="acceptance_document"><t t-call="web.html_container"><t t-foreach="docs" t-as="doc"><t t-call="web.external_layout"><div class="page">
+        <t t-set="data" t-value="doc._snapshot_data()"/>
+        <h2>SERVICE ACCEPTANCE RECORD</h2><h3 t-field="doc.name"/><p>Signed on: <span t-field="doc.signed_at"/></p>
+        <p>Customer: <span t-esc="data.get('customer')"/></p><p>Equipment: <span t-esc="data.get('equipment')"/></p>
+        <p>Actual labour hours: <span t-esc="'%.2f' % data.get('hours', 0)"/></p>
+        <p>Safety inspection, maintenance and equipment test run completed.</p>
+        <table t-if="data.get('charges')" class="table table-sm"><thead><tr><th>Charge</th><th>Quantity</th><th>Amount (tax included)</th></tr></thead><tbody><tr t-foreach="data['charges']" t-as="charge"><td t-esc="charge['product']"/><td t-esc="'%.2f' % charge['quantity']"/><td t-esc="'{:,.0f}'.format(charge['total'])"/></tr></tbody></table>
+        <p t-if="'total' in data"><strong>Total confirmed by customer: <span t-esc="'{:,.0f}'.format(data['total'])"/> <span t-esc="data.get('currency')"/></strong></p>
+        <table class="table table-sm"><thead><tr><th>Actual materials</th><th>Quantity</th><th>Unit</th></tr></thead><tbody><tr t-foreach="data.get('materials', [])" t-as="line"><td t-esc="line['product']"/><td t-esc="line['quantity']"/><td t-esc="line['uom']"/></tr></tbody></table>
+        <div class="row"><div class="col-6"><p>Before maintenance</p><img t-if="doc.before" t-att-src="image_data_uri(doc.before)" style="max-height:200px;max-width:100%"/></div><div class="col-6"><p>After maintenance</p><img t-if="doc.after" t-att-src="image_data_uri(doc.after)" style="max-height:200px;max-width:100%"/></div></div>
+        <p>Customer representative: <span t-esc="data.get('signer')"/></p><img t-if="doc.signature" t-att-src="image_data_uri(doc.signature)" style="max-height:120px"/>
+    </div></t></t></t></template>
+</odoo>

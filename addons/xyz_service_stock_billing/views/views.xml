@@ -1,0 +1,24 @@
+<odoo>
+    <record id="field_job_billing" model="ir.ui.view"><field name="name">xyz.field.job.billing</field><field name="model">project.task</field><field name="inherit_id" ref="xyz_service_core.view_field_job_form"/><field name="arch" type="xml"><xpath expr="//group[@name='xyz_charges']" position="inside">
+        <button name="action_xyz_prepare_materials" string="Prepare truck materials" type="object" groups="stock.group_stock_user"/><field name="xyz_transfer_id" groups="stock.group_stock_user"/>
+        <field name="xyz_material_ids" readonly="xyz_state in ['done', 'cancel']"><list editable="bottom"><field name="product_id"/><field name="quantity"/></list></field>
+        <field name="company_currency_id" invisible="1"/><field name="xyz_actual_amount" class="fw-bold"/>
+        <field name="xyz_invoice_id" groups="account.group_account_invoice,xyz_service_core.group_dispatcher"/>
+        <field name="xyz_cash_reported" readonly="xyz_cash_confirmed"/><field name="xyz_cash_confirmed"/>
+        <button name="action_xyz_confirm_cash" string="Accounting confirms the cash received" type="object" groups="account.group_account_invoice" invisible="xyz_cash_confirmed"/>
+        <button name="action_xyz_revise" string="Reopen for a new acceptance" type="object" groups="xyz_service_core.group_manager" invisible="xyz_state != 'done'" confirm="Reverse the consumption and cancel the draft invoice so the customer signs again?"/>
+    </xpath></field></record>
+    <record id="task_stock_form" model="ir.ui.view"><field name="name">xyz.task.stock</field><field name="model">project.task</field><field name="inherit_id" ref="xyz_service_core.task_form_xyz"/><field name="arch" type="xml">
+        <xpath expr="//field[@name='xyz_acceptance_ids']" position="before">
+            <group string="Materials and payment"><button name="action_xyz_prepare_materials" string="Prepare truck materials" type="object" groups="stock.group_stock_user"/><field name="xyz_transfer_id" groups="stock.group_stock_user"/>
+                <button name="action_xyz_revise" string="Reopen for a new acceptance" type="object" groups="xyz_service_core.group_manager" invisible="xyz_state != 'done'" confirm="Cancel the draft invoice and reverse the consumption so the customer signs the acceptance again? The previous signed evidence is retained."/>
+                <field name="xyz_material_ids" readonly="xyz_state in ['done', 'cancel']"><list editable="bottom"><field name="product_id"/><field name="quantity"/></list></field>
+                <field name="xyz_invoice_id" groups="account.group_account_invoice,xyz_service_core.group_dispatcher"/>
+                <field name="company_currency_id" invisible="1"/><field name="xyz_cash_reported"/><field name="xyz_cash_confirmed"/>
+                <field name="xyz_actual_amount"/>
+                <button name="action_xyz_confirm_cash" string="Accounting confirms the cash received" type="object" groups="account.group_account_invoice" invisible="xyz_cash_confirmed"/>
+            </group>
+        </xpath>
+    </field></record>
+    <record id="employee_truck_form" model="ir.ui.view"><field name="name">xyz.employee.truck</field><field name="model">hr.employee</field><field name="inherit_id" ref="hr.view_employee_form"/><field name="arch" type="xml"><xpath expr="//sheet" position="inside"><group string="XYZ field service"><field name="xyz_area"/><field name="xyz_location_id"/></group></xpath></field></record>
+</odoo>

@@ -1,0 +1,63 @@
+<odoo>
+    <record id="product_booking_settings" model="ir.ui.view"><field name="name">xyz.product.booking.settings</field><field name="model">product.template</field><field name="inherit_id" ref="product.product_template_only_form_view"/><field name="arch" type="xml"><xpath expr="//sheet" position="inside"><group string="XYZ website booking setup"><field name="xyz_booking_service"/><field name="xyz_expected_hours" invisible="not xyz_booking_service"/><field name="xyz_required_skill_ids" widget="many2many_tags" invisible="not xyz_booking_service"/></group></xpath></field></record>
+    <record id="task_form_xyz" model="ir.ui.view">
+        <field name="name">project.task.xyz.form</field><field name="model">project.task</field><field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before"><header>
+                <button name="action_xyz_schedule" string="Confirm schedule" type="object" groups="xyz_service_core.group_dispatcher" invisible="not xyz_booking_id or xyz_state not in ['new', 'scheduled']"/>
+                <button name="action_xyz_cancel" string="Cancel service" type="object" groups="xyz_service_core.group_dispatcher" invisible="not xyz_booking_id or xyz_state not in ['new', 'scheduled']" confirm="Cancel the unstarted service and release the reserved materials?"/>
+                <button name="action_xyz_check_in" string="Check in" type="object" class="btn-primary" invisible="not xyz_booking_id or xyz_state not in ['scheduled', 'working'] or xyz_timer_start"/>
+                <button name="action_xyz_check_out" string="Check out" type="object" invisible="not xyz_timer_start"/>
+                <button name="action_xyz_accept" string="Accept service" type="object" class="btn-primary" invisible="not xyz_booking_id or xyz_state != 'acceptance'" confirm="Confirm the customer inspected and signed for the work and the actual materials?"/>
+                <field name="xyz_state" widget="statusbar" invisible="not xyz_booking_id"/>
+            </header></xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="XYZ service details" invisible="not xyz_booking_id">
+                    <group><group><field name="xyz_booking_id"/><field name="xyz_equipment_id"/><field name="xyz_employee_id"/><field name="xyz_required_skill_ids" widget="many2many_tags"/></group>
+                    <group><field name="xyz_start"/><field name="xyz_end"/><field name="xyz_timer_start"/><field name="xyz_finished_at"/><field name="xyz_map_url" widget="url"/></group></group>
+                    <group string="Customer acceptance"><field name="xyz_checked_safety"/><field name="xyz_checked_service"/><field name="xyz_checked_test"/><field name="xyz_signer"/>
+                    <field name="xyz_before" widget="image"/><field name="xyz_after" widget="image"/><field name="xyz_signature" widget="signature"/></group>
+                    <field name="xyz_acceptance_ids"><list create="0" edit="0" delete="0"><field name="name"/><field name="signed_at"/></list></field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_field_job_form" model="ir.ui.view"><field name="name">xyz.field.job.form</field><field name="model">project.task</field><field name="priority">50</field><field name="arch" type="xml">
+        <form string="Field service" create="0" delete="0">
+            <header><field name="xyz_state" widget="statusbar"/></header>
+            <sheet>
+                <field name="xyz_can_dispatch" invisible="1"/><field name="xyz_can_work" invisible="1"/><field name="xyz_booking_id" invisible="1"/><field name="xyz_timer_start" invisible="1"/>
+                <div class="oe_title"><h1><field name="name" readonly="1"/></h1></div>
+                <group><field name="partner_id" readonly="1"/><field name="xyz_equipment_id" readonly="1"/></group>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <button name="action_xyz_schedule" string="Confirm schedule" type="object" class="btn-primary" groups="xyz_service_core.group_dispatcher" invisible="xyz_state not in ['new', 'scheduled']"/>
+                    <button name="action_xyz_check_in" string="Check in" type="object" class="btn-primary btn-lg" groups="xyz_service_core.group_technician,xyz_service_core.group_dispatcher" invisible="xyz_state not in ['scheduled', 'working'] or xyz_timer_start"/>
+                    <button name="action_xyz_check_out" string="Check out" type="object" class="btn-primary btn-lg" groups="xyz_service_core.group_technician,xyz_service_core.group_dispatcher" invisible="not xyz_timer_start"/>
+                    <button name="action_xyz_cancel" string="Cancel job" type="object" groups="xyz_service_core.group_dispatcher" invisible="xyz_state not in ['new', 'scheduled']" confirm="Cancel the unstarted job and release the reserved materials?"/>
+                </div>
+                <notebook>
+                    <page string="XYZ service details">
+                        <group string="Schedule and site"><field name="xyz_employee_id" readonly="not xyz_can_dispatch"/><field name="xyz_required_skill_ids" widget="many2many_tags" readonly="not xyz_can_dispatch"/><field name="xyz_start" readonly="not xyz_can_dispatch"/><field name="xyz_end" readonly="not xyz_can_dispatch"/><field name="xyz_map_url" widget="url"/></group>
+                        <group string="Checklist"><field name="xyz_checked_safety" readonly="xyz_state == 'done' or not xyz_can_work"/><field name="xyz_checked_service" readonly="xyz_state == 'done' or not xyz_can_work"/><field name="xyz_checked_test" readonly="xyz_state == 'done' or not xyz_can_work"/></group>
+                        <group string="Site photos"><group><field name="xyz_before" widget="image" readonly="xyz_state == 'done' or not xyz_can_work"/></group><group><field name="xyz_after" widget="image" readonly="xyz_state == 'done' or not xyz_can_work"/></group></group>
+                        <group name="xyz_charges" string="Materials and charges"/>
+                        <group string="Customer acceptance"><field name="xyz_signer" readonly="xyz_state == 'done' or not xyz_can_work"/><field name="xyz_signature" widget="signature" readonly="xyz_state == 'done' or not xyz_can_work"/></group>
+                        <button name="action_xyz_accept" string="Sign acceptance and create draft invoice" type="object" class="btn-primary btn-lg" groups="xyz_service_core.group_technician,xyz_service_core.group_dispatcher" invisible="xyz_state != 'acceptance'" confirm="Did the customer inspect the labour hours, materials and total before signing?"/>
+                        <field name="xyz_acceptance_ids"><list create="0" edit="0" delete="0"><field name="name"/><field name="signed_at"/></list></field>
+                    </page>
+                    <page string="Timesheets"><field name="timesheet_ids" readonly="1"><list><field name="date"/><field name="name"/><field name="unit_amount" widget="float_time"/></list></field></page>
+                </notebook>
+            </sheet><chatter/>
+        </form>
+    </field></record>
+    <record id="booking_list" model="ir.ui.view"><field name="name">xyz.booking.list</field><field name="model">xyz.booking</field><field name="arch" type="xml"><list create="0"><field name="name"/><field name="partner_id"/><field name="equipment_id"/><field name="requested_start"/><field name="sale_id"/><field name="lead_id"/></list></field></record>
+    <record id="action_booking" model="ir.actions.act_window"><field name="name">Bookings</field><field name="res_model">xyz.booking</field><field name="view_mode">list,form</field></record>
+    <record id="action_equipment" model="ir.actions.act_window"><field name="name">Equipment</field><field name="res_model">xyz.equipment</field><field name="view_mode">list,form</field></record>
+    <record id="action_service_tasks" model="ir.actions.act_window"><field name="name">Field jobs</field><field name="res_model">project.task</field><field name="view_mode">list,form,kanban,calendar</field><field name="view_id" ref="view_field_job_form"/><field name="domain">[('xyz_booking_id', '!=', False)]</field></record>
+    <record id="action_dispatch" model="ir.actions.client"><field name="name">Dispatch board</field><field name="tag">xyz_dispatch</field></record>
+    <menuitem id="menu_xyz" name="XYZ Service" sequence="5"/>
+    <menuitem id="menu_jobs" name="Field jobs" parent="menu_xyz" action="action_service_tasks" sequence="10"/>
+    <menuitem id="menu_dispatch" name="Dispatch board" parent="menu_xyz" action="action_dispatch" groups="group_dispatcher" sequence="20"/>
+    <menuitem id="menu_bookings" name="Bookings" parent="menu_xyz" action="action_booking" groups="sales_team.group_sale_salesman" sequence="30"/>
+    <menuitem id="menu_equipment" name="Equipment" parent="menu_xyz" action="action_equipment" sequence="40"/>
+</odoo>

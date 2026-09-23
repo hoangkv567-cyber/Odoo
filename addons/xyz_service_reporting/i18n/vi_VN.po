@@ -1,0 +1,137 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* xyz_service_reporting
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: Vietnamese\n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__completed
+msgid "Completed"
+msgstr "Đã hoàn thành"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__current_amount
+msgid "Current AR (not yet due)"
+msgstr "Công nợ trong hạn"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__partner_id
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__date
+msgid "Date"
+msgstr "Ngày"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__hours
+msgid "Hours"
+msgstr "Giờ"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__id
+msgid "ID"
+msgstr "ID"
+
+#. module: xyz_service_reporting
+#: model:ir.ui.menu,name:xyz_service_reporting.menu_report
+msgid "Management reports"
+msgstr "Báo cáo quản trị"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__material_cost
+msgid "Material Cost"
+msgstr "Chi phí vật tư"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__on_time
+msgid "On Time"
+msgstr "Đúng hạn"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__on_time_rate
+msgid "On-time rate (%)"
+msgstr "Tỷ lệ đúng hạn (%)"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__residual
+msgid "Outstanding AR"
+msgstr "Công nợ chưa thu"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__overdue
+msgid "Overdue AR"
+msgstr "Công nợ quá hạn"
+
+#. module: xyz_service_reporting
+#: model:ir.actions.act_window,name:xyz_service_reporting.action_report_receivable
+#: model:ir.ui.menu,name:xyz_service_reporting.menu_report_receivable
+#: model_terms:ir.ui.view,arch_db:xyz_service_reporting.report_graph_receivable
+msgid "Receivables by customer"
+msgstr "Công nợ theo khách hàng"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__revenue
+msgid "Revenue"
+msgstr "Doanh thu"
+
+#. module: xyz_service_reporting
+#: model:ir.actions.act_window,name:xyz_service_reporting.action_report_revenue
+#: model:ir.ui.menu,name:xyz_service_reporting.menu_report_revenue
+#: model_terms:ir.ui.view,arch_db:xyz_service_reporting.report_graph_revenue
+msgid "Revenue and material cost"
+msgstr "Doanh thu & Chi phí vật tư"
+
+#. module: xyz_service_reporting
+#: model:ir.actions.act_window,name:xyz_service_reporting.action_report
+msgid "Service dashboard"
+msgstr "Bảng điều khiển dịch vụ"
+
+#. module: xyz_service_reporting
+#: model_terms:ir.ui.view,arch_db:xyz_service_reporting.report_pivot
+msgid "Service performance"
+msgstr "Hiệu quả dịch vụ"
+
+#. module: xyz_service_reporting
+#: model:ir.model,name:xyz_service_reporting.model_xyz_service_report
+msgid "Service performance report"
+msgstr "Báo cáo hiệu quả dịch vụ"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__state
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: xyz_service_reporting
+#: model:ir.model.fields,field_description:xyz_service_reporting.field_xyz_service_report__employee_id
+msgid "Technician"
+msgstr "Kỹ thuật viên"
+
+#. module: xyz_service_reporting
+#: model_terms:ir.ui.view,arch_db:xyz_service_reporting.report_graph
+msgid "Technician performance"
+msgstr "Hiệu suất thợ bảo dưỡng"
